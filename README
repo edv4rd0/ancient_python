@@ -1,0 +1,23 @@
+I have set up a sample user which is created by running deploy/deploy.py.
+
+Username: user
+Password: password
+
+
+In testing the specific user's attributes were:
+
+{u'username': u'user', 
+u'password': u'bcbe6057130774568dbeafe30c50d9d787af419163eea37eed328bd2068f6bcc34dc9f5aecd464c34c3c93eb8f3aa11e59222e89311471f7f139ef4e64495792', 
+u'edit_record': True, 
+u'add_record': True, 
+u'generate_report': False, 
+u'remove_record': True, 
+u'_id': ObjectId('51efb3447b68e73c5a89d1c3')}
+
+Generate report is therefore the only api call that should fail.
+
+I have not written tests. I would want to individually test each function, 
+then I would want to write broader tests to test the functionality of whole sections.
+
+This was run without a proper deployment of Flask - simply the dev server. I've done initial edge case user testing, but there are probably instances of 
+exception handling that would need to be added.
