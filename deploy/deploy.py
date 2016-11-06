@@ -1,3 +1,9 @@
+"""
+This can be run to set up the default user.
+
+It will also implement an index on the username.
+"""
+
 from pymongo import MongoClient
 import hashlib
 

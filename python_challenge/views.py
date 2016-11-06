@@ -1,3 +1,7 @@
+"""
+This should contain views with very limited business rules. Any c
+omplicated logic should be offloaded into other modules.
+"""
 from flask import Flask, session, url_for, request, flash
 from flask import render_template, redirect
 

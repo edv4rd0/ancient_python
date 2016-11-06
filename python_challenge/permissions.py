@@ -1,3 +1,8 @@
+"""
+This contains most of the logic for user authentication (login) as
+well as user role handling.
+"""
+
 from flask import session, redirect, url_for
 from functools import wraps
 import hashlib

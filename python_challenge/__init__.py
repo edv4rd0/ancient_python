@@ -1,3 +1,7 @@
+"""
+Setup the core application variables and attributes
+"""
+
 from flask import Flask, session
 from flask.ext.pymongo import PyMongo
 
@@ -8,4 +12,4 @@ app.secret_key = "SECRET" # Yeah, I know
 
 mongo = PyMongo(app)
 
-import python_challenge.views
+import python_challenge.views # Circular import, but in this case it's okay
